@@ -1,6 +1,9 @@
 # SerpApi for JavaScript/TypeScript
 
-This is fork of the original [serpapi/serpapi-javascript](https://github.com/serpapi/serpapi-javascript) repository with support for modern browsers and Node >= 18. If using Node >= 7, please use the original repository.
+This is fork of the original
+[serpapi/serpapi-javascript](https://github.com/serpapi/serpapi-javascript)
+repository with support for modern browsers and Node >= 18. If using Node >= 7,
+please use the original repository.
 
 [![npm version](https://img.shields.io/npm/v/serpapi)](https://www.npmjs.com/package/@subho57/serpapi)
 [![Deno version](https://deno.land/badge/serpapi/version)](https://deno.land/x/serpapi)
@@ -75,7 +78,8 @@ import { getJson } from "https://deno.land/x/serpapi/mod.ts";
 ## Features
 
 - TypeScript support.
-- Works out-of-the-box with [Node.js](https://www.npmjs.com/package/@subho57/serpapi) and
+- Works out-of-the-box with
+  [Node.js](https://www.npmjs.com/package/@subho57/serpapi) and
   [Deno](https://deno.land/x/serpapi).
 - Promises and async/await support.
 - Callbacks support.
