@@ -27,7 +27,8 @@ await build({
   package: {
     name: "@subho57/serpapi",
     version,
-    description: "Scrape and parse search engine results using SerpApi with Browser support",
+    description:
+      "Scrape and parse search engine results using SerpApi with Browser support",
     license: "MIT",
     repository: {
       type: "git",
@@ -39,7 +40,7 @@ await build({
     },
     sideEffects: false,
     publishConfig: {
-      "access": "public"
+      "access": "public",
     },
     keywords: [
       "serpapi",
