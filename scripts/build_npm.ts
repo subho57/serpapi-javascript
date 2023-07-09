@@ -21,20 +21,25 @@ await build({
   },
   compilerOptions: {
     // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
-    lib: ["es2017"],
-    target: "ES2017",
+    lib: ["es2022"],
+    target: "ES2021",
   },
   package: {
-    name: "serpapi",
+    name: "@subho57/serpapi",
     version,
-    description: "Scrape and parse search engine results using SerpApi.",
+    description: "Scrape and parse search engine results using SerpApi with Browser support",
     license: "MIT",
     repository: {
       type: "git",
-      url: "git+https://github.com/serpapi/serpapi-javascript.git",
+      url: "git+https://github.com/subho57/serpapi-javascript.git",
     },
+    homepage: "https://subho57.github.io/serpapi-javascript",
     bugs: {
-      url: "https://github.com/serpapi/serpapi-javascript/issues",
+      url: "https://github.com/subho57/serpapi-javascript/issues",
+    },
+    sideEffects: false,
+    publishConfig: {
+      "access": "public"
     },
     keywords: [
       "serpapi",

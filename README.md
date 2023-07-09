@@ -1,6 +1,8 @@
 # SerpApi for JavaScript/TypeScript
 
-[![npm version](https://img.shields.io/npm/v/serpapi)](https://www.npmjs.com/package/serpapi)
+This is fork of the original [serpapi/serpapi-javascript](https://github.com/serpapi/serpapi-javascript) repository with support for modern browsers and Node >= 18. If using Node >= 7, please use the original repository.
+
+[![npm version](https://img.shields.io/npm/v/serpapi)](https://www.npmjs.com/package/@subho57/serpapi)
 [![Deno version](https://deno.land/badge/serpapi/version)](https://deno.land/x/serpapi)
 [![Build status](https://github.com/serpapi/serpapi-javascript/workflows/Build/badge.svg?branch=master)](https://github.com/serpapi/serpapi-javascript/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/serpapi/serpapi-javascript)](https://github.com/serpapi/serpapi-javascript/blob/master/LICENSE)
@@ -17,15 +19,15 @@ more.
 
 ### Node.js
 
-- Supports Node.js 7.10.1 and newer.
-- Refer to [this example](examples/node/basic_js_node_7_up) for help.
+- Supports Node.js 18.x and newer.
+- Refer to [this example](examples/node/basic_js_node_18_up) for help.
 
 ```bash
-npm install serpapi
+npm install @subho57/serpapi
 ```
 
 ```js
-const { getJson } = require("serpapi");
+const { getJson } = require("@subho57/serpapi");
 getJson({
   engine: "google",
   api_key: API_KEY, // Get your API_KEY from https://serpapi.com/manage-api-key
@@ -38,9 +40,7 @@ getJson({
 
 ### Node.js with ES Modules (ESM) and top-level await
 
-- If you prefer using the `import` syntax and top-level `await`, you need to use
-  at least Node.js 14.8.0.
-- Refer to [this example](examples/node/basic_js_node_14_up) for help.
+- Refer to [this example](examples/node/basic_js_node_18_up) for help.
 
 You will need to add `"type": "module"` to your `package.json`:
 
@@ -52,7 +52,7 @@ You will need to add `"type": "module"` to your `package.json`:
 ```
 
 ```js
-import { getJson } from "serpapi";
+import { getJson } from "@subho57/serpapi";
 const response = await getJson({
   engine: "google",
   api_key: API_KEY, // Get your API_KEY from https://serpapi.com/manage-api-key
@@ -75,11 +75,11 @@ import { getJson } from "https://deno.land/x/serpapi/mod.ts";
 ## Features
 
 - TypeScript support.
-- Works out-of-the-box with [Node.js](https://www.npmjs.com/package/serpapi) and
+- Works out-of-the-box with [Node.js](https://www.npmjs.com/package/@subho57/serpapi) and
   [Deno](https://deno.land/x/serpapi).
 - Promises and async/await support.
 - Callbacks support.
-- [Examples in JavaScript/TypeScript on Node.js/Deno using ESM/CommonJS, and more](https://github.com/serpapi/serpapi-javascript/tree/master/examples).
+- [Examples in JavaScript/TypeScript on Node.js/Deno using ESM/CommonJS, and more](https://github.com/subho57/serpapi-javascript/tree/master/examples).
 - [Pagination support](#pagination).
 - (Planned) More error classes.
 
@@ -94,7 +94,7 @@ All functions, other than `getLocations`, accepts an optional `api_key` and
 `getLocations` doesn't require an API key.
 
 ```js
-import { config, getJson } from "serpapi";
+import { config, getJson } from "@subho57/serpapi";
 
 config.api_key = API_KEY;
 config.timeout = 60000;

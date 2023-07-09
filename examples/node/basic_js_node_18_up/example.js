@@ -1,5 +1,5 @@
 /**
- * Example works for Node.js 14 and newer.
+ * Example works for Node.js 18 and newer.
  * - Uses ESM imports which is supported from Node.js 13.2.0.
  *   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#browser_compatibility
  * - Uses top-level await which is supported from Node.js 14.8.0.

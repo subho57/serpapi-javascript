@@ -106,13 +106,8 @@ export function execute(
   });
   return new Promise((resolve, reject) => {
     let timer: number;
-    // deno-lint-ignore no-explicit-any
-    let controller: any = undefined;
-    try {
-      controller = new AbortController();
-    } catch (err) {
-      console.warn(err.message);
-    }
+    const controller = new AbortController();
+
     fetch(url, { signal: controller?.signal }).then((resp) => {
       resp.text().then((data) => {
         if (resp.status === 200) {
